@@ -1,9 +1,66 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="utf-8"
-    </head>
-    <body>
-        
-    </body>
+
+<head>
+     <meta charset="utf-8"
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <title>Proyecto lenguaje de marcas</title>
+
+     <style>
+
+        #fotoResponsive {
+
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        #portaRetrato {
+
+            width: 1200px;
+            height: 800px;
+            
+        }
+
+        @media screen and (orientation:portrait) {
+
+            #portaRetrato {
+                width: 600px;
+                height: 900px;
+            }
+        }
+
+     </style>
+</head>
+
+<body>
+
+    <picture id="portaRetrato">
+
+        <source media="(orientation: landscape) and (min-width: 801px)" srcset="ImagenEspacio.heic" type="image/heic">
+        <source media="(orientation: landscape) and (min-width: 801px)" srcset="ImagenEspacio.webp" type="image/webp">
+        <source media="(orientation: landscape) and (min-width: 801px)" srcset="ImagenEspacio.jpg" type="image/jpg">
+        <source media="(orientation: landscape) and (max-width: 800px)" srcset="ImagenTriangulo.heic" type="image/heic">
+        <source media="(orientation: landscape) and (max-width: 800px)" srcset="ImagenTriangulo.webp" type="image/webp">
+        <source media="(orientation: landscape) and (max-width: 800px)" srcset="ImagenTriangulo.jpg" type="image/jpg">
+        <source media="(orientation: portrait) and (min-width: 601px)" srcset="ImagenHelada.heic" type="image/heic">
+        <source media="(orientation: portrait) and (min-width: 601px)" srcset="ImagenHelada.webp" type="image/webp">
+        <source media="(orientation: portrait) and (min-width: 601px)" srcset="ImagenHelada.jpg" type="image/jpg">
+        <source media="(orientation: portrait) and (max-width: 600px)" srcset="ImagenZorro.heic" type="image/heic">
+        <source media="(orientation: portrait) and (max-width: 600px)" srcset="ImagenZorro.webp" type="image/webp">
+        <source media="(orientation: portrait) and (max-width: 600px)" srcset="ImagenZorro.jpg" type="image/jpg">
+
+
+        <img
+
+            id="fotoResponsive"
+            alt="Fotos"
+            src="ImagenEspacio.jpg"
+
+    </picture>
+
+</body>
+
 </html>
